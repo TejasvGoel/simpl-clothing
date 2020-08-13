@@ -1,8 +1,8 @@
 import React from'react';
-import MenuItem from './menu-item/menu-component';
+import MenuItem from '../menu-item/menu-component';
 import './directory-component.scss';
 
-class DirectotyComponent extends React.Component{
+class DirectoryComponent extends React.Component{
     constructor(){
         super();
 
@@ -46,11 +46,11 @@ class DirectotyComponent extends React.Component{
 render(){
     const {section} = this.state;
     return(
-        <div>
+        <div className='directory-menu'>
             {
                 section.map(({title, imageUrl, size, id, linkUrl}) =>{
                     return(
-                        <MenuItem id={id} title={title} imgUrl={imageUrl} />
+                        <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} />
                     );
                 })
             }
@@ -60,4 +60,4 @@ render(){
 
 }
 
-export default DirectotyComponent;
+export default DirectoryComponent;
