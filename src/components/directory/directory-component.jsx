@@ -48,9 +48,9 @@ render(){
     return(
         <div className='directory-menu'>
             {
-                section.map(({title, imageUrl, size, id, linkUrl}) =>{
+                section.map(({ id, ...otherComponents}) =>{
                     return(
-                        <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} />
+                        <MenuItem key={id} {...otherComponents}/>
                     );
                 })
             }
