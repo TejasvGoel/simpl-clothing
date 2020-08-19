@@ -3,7 +3,7 @@ import './App.css';
 import HomePage from './pages/homepages/homepage-component';
 import {Route, Switch} from 'react-router-dom';
 import shopPage from './pages/shoppages/shop-component';
-
+import Headers from './components/headers/header-component';
 
 
 class App extends Component{
@@ -12,6 +12,7 @@ class App extends Component{
   return (
 
     <div >
+      <Headers />
       <Switch>
       <Route exact path='/' component={HomePage} />
       <Route  path='/shop' component={shopPage} />
