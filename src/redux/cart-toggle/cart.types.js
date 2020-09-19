@@ -1,5 +1,7 @@
 const ToggleHidden = ({
-    TOGGLEHIDDEN:'TOGGLEHIDDEN'
+    TOGGLEHIDDEN:'TOGGLEHIDDEN',
+    ADD_ITEM:'ADD_ITEM'
+
 });
 
 export default ToggleHidden;
