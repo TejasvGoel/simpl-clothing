@@ -9,3 +9,14 @@ export const Add_Item = item =>({
     payload:item
 });
 
+export const CLEAR_ITEM_FROM_CART = item =>({
+    type:ToggleHidden.CLEAR_ITEM_FROM_CART,
+    payload:item
+});
+
+
+export const REMOVE_ITEM = item =>({
+    type:ToggleHidden.REMOVE_ITEM,
+    payload:item
+});
+
