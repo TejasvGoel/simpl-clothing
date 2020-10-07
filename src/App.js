@@ -5,6 +5,7 @@ import {connect} from 'react-redux';
 import {setCurrentUser} from './redux/user/user.actions';
 
 
+
 import './App.css';
 
 import HomePage from './pages/homepages/homepage-component';
@@ -73,7 +74,7 @@ class App extends Component {
 
     );
   }
-}
+} 
 
 const mapStateToProps = ({user}) =>({ currentUser: user.currentUser })
 
