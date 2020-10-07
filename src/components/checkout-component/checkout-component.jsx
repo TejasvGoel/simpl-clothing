@@ -2,6 +2,8 @@ import React from 'react';
 
 import './checkout-style.scss';
 
+
+
 import {connect } from 'react-redux';
 import {CLEAR_ITEM_FROM_CART, Add_Item, REMOVE_ITEM} from '../../redux/cart-toggle/cart.action';
 
